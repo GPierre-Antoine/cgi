@@ -33,7 +33,7 @@
 *.out
 *.app
 
-.gitignore
 .idea/
 build/
 cmake-build-debug/
+
