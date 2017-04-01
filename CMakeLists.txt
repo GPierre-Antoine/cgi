@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.4)
 
-set(PROJECT_NAME Tutorat)
+set(PROJECT_NAME cgi)
+set(BUILD_VERSION 0.0)
 
 project(${PROJECT_NAME})
 
@@ -21,6 +22,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 file(GLOB_RECURSE SOURCE src/*.cpp include/*.h include/*.hpp)
 set(SOURCE_FILES main.cpp ${SOURCE})
 
-set(EXECUTABLE_NAME ${PROJECT_NAME})
+set(EXECUTABLE_NAME ${PROJECT_NAME}-${BUILD_VERSION}-${CMAKE_BUILD_TYPE})
 
 add_executable(${EXECUTABLE_NAME} ${SOURCE_FILES})
