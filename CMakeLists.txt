@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.4)
 
-set(PROJECT_NAME cgi)
+set(PROJECT_NAME glittering_moon)
 set(BUILD_VERSION 0.0)
 
 project(${PROJECT_NAME})
